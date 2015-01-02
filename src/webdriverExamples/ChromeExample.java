@@ -12,7 +12,6 @@ public class ChromeExample {
 		System.setProperty("webdriver.chrome.driver", "D:/Chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com");
-		//driver.get("http://uname:pwd@www.google.com");
 		Thread.sleep(10000);
 		WebElement element=driver.findElement(By.name("q"));
 		element.sendKeys("books");

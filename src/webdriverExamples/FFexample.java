@@ -12,7 +12,7 @@ public class FFexample {
 		// TODO Auto-generated method stub 
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.google.com");
-		WebElement element=driver.findElement(By.id("gbqfq"));
+		WebElement element=driver.findElement(By.name("q"));
 		Thread.sleep(10000);
 		element.sendKeys("books");
 		element.submit();		
