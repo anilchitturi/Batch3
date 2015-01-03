@@ -21,6 +21,7 @@ public class WaitForElementToBeClickable {
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//input[@name='fname']")).sendKeys("My Name");
         //Wait for element to be clickable
+        
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#submitButton")));
 

@@ -19,7 +19,7 @@ private void msg1(){
 	System.out.println("Hello msg1");
 	}
 
-public void msg2(){
+ void msg2(){
 	System.out.println("Hello msg2");
 	}
 
