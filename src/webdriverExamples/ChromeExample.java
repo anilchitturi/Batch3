@@ -14,6 +14,7 @@ public class ChromeExample {
 		driver.get("https://www.google.com");
 		Thread.sleep(10000);
 		WebElement element=driver.findElement(By.name("q"));
+		element.clear();
 		element.sendKeys("books");
 		Thread.sleep(10000);
 		element.submit();	
